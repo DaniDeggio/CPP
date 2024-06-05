@@ -12,38 +12,21 @@
 
 #include    "Contact.hpp"
 
-Contact::Contact(void)
-{
+Contact::Contact(void){
     return ;
 }
 
-Contact::~Contact(void)
-{
+Contact::~Contact(void){
     return ;
 }
 
-void	Contact::add_contact(std::string frist_name, std::string last_name,
+void	Contact::set_contact(std::string frist_name, std::string last_name,
 		std::string nickname, std::string phone_number, std::string secret){
     this->frist_name = frist_name;
     this->last_name = last_name;
     this->nickname = nickname;
     this->phone_number = phone_number;
-}
-
-void    Contact::set_frist_name(std::string   frist_name){
-    this->frist_name = frist_name;
-}
-
-void    Contact::set_last_name(std::string   last_name){
-
-}
-
-void    Contact::set_nickname(std::string   nickname){
-    this->nickname = nickname;
-}
-
-void    Contact::set_phone_number(int   phone_number){
-    this->phone_number = phone_number;
+    this->darkest_secret = secret;
 }
 
 std::string  Contact::get_frist_name(){
