@@ -22,12 +22,20 @@ Contact::~Contact(void)
     return ;
 }
 
+void	Contact::add_contact(std::string frist_name, std::string last_name,
+		std::string nickname, std::string phone_number, std::string secret){
+    this->frist_name = frist_name;
+    this->last_name = last_name;
+    this->nickname = nickname;
+    this->phone_number = phone_number;
+}
+
 void    Contact::set_frist_name(std::string   frist_name){
     this->frist_name = frist_name;
 }
 
 void    Contact::set_last_name(std::string   last_name){
-    this->last_name = last_name;
+
 }
 
 void    Contact::set_nickname(std::string   nickname){
