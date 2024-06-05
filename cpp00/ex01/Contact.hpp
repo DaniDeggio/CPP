@@ -26,11 +26,8 @@ private:
 public:
 	Contact();
 	~Contact();
-	void		set_frist_name(std::string frist_name);
-	void		set_last_name(std::string last_name);
-	void		set_nickname(std::string nickname);
-	void		set_phone_number(int phone_number);
-	void		set_darkest_secret(std::string darkest_secret);
+void	set_contact(std::string frist_name, std::string last_name,
+		std::string nickname, std::string phone_number, std::string secret);
 	std::string	get_frist_name();
 	std::string	get_last_name();
 	std::string	get_nickname();
