@@ -12,8 +12,42 @@
 
 #include "Phone.hpp"
 
+void question(int n){
+ if (n == 0)
+		std::cout << "Type the Frist Name:" << std::endl;
+if (n == 1)
+		std::cout << "Type the Last Name:" << std::endl;
+if (n == 2)
+		std::cout << "Type the NickName:" << std::endl;
+if (n == 3)
+		std::cout << "Type the Phonenumber:" << std::endl;
+if (n == 4)
+		std::cout << "Type the Darkest Secret:" << std::endl;
+}
+
+int check_answare(std::string answare, int n){
+	answare.erase(0, answare.find_first_not_of(" \t\v\f\r"));
+		while (isspace(answare[answare.length() - 1]))
+            answare.erase(command.find_last_not_of(" \t\v\r\f") + 1, answare[command.length() - 1]);
+	if (answare.empty)
+		return (1)
+	if (n == 3)
+	//controllare numeri
+return (0)
+}
+
 void	add(){
-	return ;
+		int n = 0;
+		std::string answare;
+
+	while (n < 5) {
+	quetion(n);
+			std::getline(std::cin, answare);
+ if (!check_answere(answare, n))
+			n++;
+	else
+			std::cout << "Invalid field" << std::endl;
+	}
 }
 
 void	search(){
