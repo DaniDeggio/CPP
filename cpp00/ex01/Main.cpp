@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:13:40 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/05 14:58:37 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/05 16:48:54 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ void	search(){
 int main(){
 	PhoneBook   phonebook;
 	std::string command;
+	std::cout << "Command: ADD, SEARCH, EXIT" << std::endl;
 	while(42)
-		std::cout << "Command: ADD, SEARCH, EXIT" << std::endl;
 		std::getline(std::cin, command);
 		//command = command.substr(0, command.find(' '));
 		command.erase(0, command.find_first_not_of(" \t\v\f\r"));
