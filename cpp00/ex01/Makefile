@@ -6,11 +6,11 @@
 #    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/05/21 16:15:29 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/06/05 14:32:41 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= megaphone
+NAME	= PhoneBook
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -26,7 +26,9 @@ YELLOW := \033[1;33m
 BLUE := \033[1;34m
 CYAN := \033[1;36m
 
-SRC := megaphone.cpp
+SRC := main.cpp \
+		PhoneBook.cpp \
+		Contact.cpp
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 

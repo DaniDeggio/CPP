@@ -6,12 +6,12 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 17:26:53 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/05/30 16:30:34 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/05 15:01:16 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifdef CONTACT_HPP
+#ifndef CONTACT_HPP
 #define	CONTACT_HPP
 
 #include <iostream>
@@ -24,6 +24,8 @@ private:
 	int			phone_number;
 	std::string	darkest_secret;
 public:
+	Contact();
+	~Contact();
 	void		set_first_name(std::string first_name);
 	void		set_last_name(std::string last_name);
 	void		set_nickname(std::string nickname);
