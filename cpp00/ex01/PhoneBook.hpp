@@ -22,8 +22,9 @@ private:
 public:
 	PhoneBook();
 	~PhoneBook();
-	void	PhoneBook:add_contact(std::string frist_name, std::string last_name,
-		std::string nickname, int phone_number);
+    void   PhoneBook::slide_contacts(PhoneBook pb);
+	void	PhoneBook::add_contact(std::string frist_name, std::string last_name,
+		std::string nickname, std::string phone_number, std::string secret);
 };
 
 #endif
