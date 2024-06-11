@@ -31,9 +31,9 @@ void PhoneBook::slide_contacts(PhoneBook pb){
 
 void	PhoneBook::add_contact(std::string frist_name, std::string last_name,
     std::string nickname, std::string phone_number, std::string secret){
-    Contact new;
+    Contact new_contact;
 
     PhoneBook::slide_contacts(this);
-    new.set_contat(frist_name, last_name, nickname, phone_nuber, secret);
-    this.contact[0] = new;
+    new_contact.set_contact(frist_name, last_name, nickname, phone_number, secret);
+    this.contact[0] = new_contact;
 //}
