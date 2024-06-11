@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:29:03 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/05 16:48:00 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/11 18:08:18 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void PhoneBook::slide_contacts(PhoneBook pb){
     int i = 7;
 
     while(i > 0){
-        pb.contact[i] = pb.contact[i - 1]
+        pb.Contacts[i] = pb.Contacts[i - 1];
         i--;
     }
 }

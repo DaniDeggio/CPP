@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:13:40 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/05 16:48:54 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/11 18:07:27 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,12 @@ if (n == 4)
 int check_answare(std::string answare, int n){
 	answare.erase(0, answare.find_first_not_of(" \t\v\f\r"));
 		while (isspace(answare[answare.length() - 1]))
-            answare.erase(command.find_last_not_of(" \t\v\r\f") + 1, answare[command.length() - 1]);
-	if (answare.empty)
-		return (1)
+            answare.erase(answare.find_last_not_of(" \t\v\r\f") + 1, answare[answare.length() - 1]);
+	if (answare.empty())
+		return (1);
 	if (n == 3)
-	//controllare numeri
-return (0)
+		return (0); 	//controllare numeri
+	return (0);
 }
 
 void	add(){
@@ -41,9 +41,9 @@ void	add(){
 		std::string answare;
 
 	while (n < 5) {
-	quetion(n);
+	question(n);
 			std::getline(std::cin, answare);
- if (!check_answere(answare, n))
+ if (!check_answare(answare, n))
 			n++;
 	else
 			std::cout << "Invalid field" << std::endl;

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/06/05 14:32:41 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/06/10 16:05:54 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ YELLOW := \033[1;33m
 BLUE := \033[1;34m
 CYAN := \033[1;36m
 
-SRC := main.cpp \
+SRC := Main.cpp \
 		PhoneBook.cpp \
 		Contact.cpp
 
