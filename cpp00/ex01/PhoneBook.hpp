@@ -22,7 +22,7 @@ private:
 public:
 	PhoneBook();
 	~PhoneBook();
-    void   slide_contacts(PhoneBook pb);
+    void   slide_contacts(PhoneBook *pb);
 	void	add_contact(std::string frist_name, std::string last_name,
 		std::string nickname, std::string phone_number, std::string secret);
 };
