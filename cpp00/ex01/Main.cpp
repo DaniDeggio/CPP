@@ -48,6 +48,7 @@ void	add(){
 	else
 			std::cout << "Invalid field" << std::endl;
 	}
+	std::cout << "Added successfully!" << endl:
 }
 
 void	search(){
