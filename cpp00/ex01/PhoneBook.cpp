@@ -24,7 +24,7 @@ void PhoneBook::slide_contacts(PhoneBook *pb){
     int i = 7;
 
     while(i > 0){
-        pb->Contacts[i] = pb_>Contacts[i - 1];
+        pb->Contacts[i] = pb->Contacts[i - 1];
         i--;
     }
 }
