@@ -64,7 +64,8 @@ int main(){
 		command.erase(0, command.find_first_not_of(" \t\v\f\r"));
 		while (isspace(command[command.length() - 1]))
             command.erase(command.find_last_not_of(" \t\v\r\f") + 1, command[command.length() - 1]);
-		if (command == "ADD")
+		std::cout << "THE COMMAND IS: |" << command << "|" <<endl;
+	if (command == "ADD")
 			add();
 		else if (command == "SEARCH")
 			search();
