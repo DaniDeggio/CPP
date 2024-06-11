@@ -59,7 +59,7 @@ int main(){
 	PhoneBook   phonebook;
 	std::string command;
 	while(42){
- 	std::cout << "Type a command: ADD, SEARCH, EXIT" << std::endl;
+ 	std::cout << std::endl << "Type a command: ADD, SEARCH, EXIT" << std::endl;
 		std::getline(std::cin, command);
 		//command = command.substr(0, command.find(' '));
 		command.erase(0, command.find_first_not_of(" \t\v\f\r"));
