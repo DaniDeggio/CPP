@@ -20,7 +20,7 @@ PhoneBook::~PhoneBook(){
     return ;
 }
 
-void PhoneBook::slide_contacts(PhoneBook pb){
+void PhoneBook::slide_contacts(PhoneBook *pb){
     int i = 7;
 
     while(i > 0){
