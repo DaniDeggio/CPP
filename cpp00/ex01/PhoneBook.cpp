@@ -35,7 +35,9 @@ void	PhoneBook::add_contact(std::string frist_name, std::string last_name,
 
 	PhoneBook::slide_contacts(this);
 	new_contact.set_contact(frist_name, last_name, nickname, phone_number, secret);
-	this->Contacts[0] = new_contact;
+	std::cout << new_contact.get_fristname() << std::endl;
+this->Contacts[0] = new_contact;
+	std::cout << this.print_contact(0);
 }
 
 void    PhoneBook::print_contact(int i){
