@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Main.cpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:13:40 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/11 18:07:27 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/12 05:05:46 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,40 @@ int check_answare(std::string answare, int n){
 	return (0);
 }
 
-void	add(){
-		int n = 0;
-		std::string answare;
+void	add_newcontact(PhoneBook phonebook, std::string answare, int n){
+	static	std::string frist_name;
+	static	std::string last_name;
+    static	std::string nickname;
+	static	std::string phone_number;
+	static	std::string secret;
+	
+	if (n == 0)
+		frist_name = answare;
+	if (n == 1)
+		last_name = answare;
+	if (n == 2)
+		nickname = answare;
+	if (n == 3)
+		phone_number = answare;
+	if (n == 4)
+	{
+		secret = answare;
+		phonebook.add_contact(frist_name, last_name, nickname, phone_number, secret);
+	}
+}
+
+void	add(PhoneBook phonebook){
+	int n = 0;
+	std::string answare;
 
 	while (n < 5) {
-	question(n);
-			std::getline(std::cin, answare);
- if (!check_answare(answare, n))
-			n++;
+		question(n);
+	std::getline(std::cin, answare);
+	if (!check_answare(answare, n))
+	{
+		add_newcontact(phonebook, answare, n);
+		n++;
+	}
 	else
 			std::cout << "Invalid field" << std::endl;
 	}
@@ -66,7 +91,7 @@ int main(){
 		while (isspace(command[command.length() - 1]))
             command.erase(command.find_last_not_of(" \t\v\r\f") + 1, command[command.length() - 1]);
 	if (command == "ADD")
-			add();
+			add(phonebook);
 		else if (command == "SEARCH")
 			search();
 		else if (command == "EXIT")
