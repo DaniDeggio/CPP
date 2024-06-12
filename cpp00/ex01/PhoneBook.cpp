@@ -51,18 +51,19 @@ int	PhoneBook::print_info(int i){
 		//return (1);
 	if (i > 0)
 			std::cout << "---------------------------------------------" << std::endl;
-	std::cout << "|" << std::setw(10) << i << "|" << std::endl;
+	std::cout << "|" << std::setw(10) << i << "|";
 	if (this->Contacts[i].get_frist_name().length() > 10)
-		std::cout << "|" << std::string(this->Contacts[i].get_frist_name(), 0, 9) << ".|" << std::endl;
+		std::cout << "|" << std::string(this->Contacts[i].get_frist_name(), 0, 9) << ".|";
 	else
-		std::cout << "|" << std::setw(10) << this->Contacts[i].get_frist_name() << "|" << std::endl;
+		std::cout << "|" << std::setw(10) << this->Contacts[i].get_frist_name() << "|";
 	if (this->Contacts[i].get_last_name().length() > 10)
-		std::cout << std::string(this->Contacts[i].get_last_name(), 0, 9) << ".|" << std::endl;
+		std::cout << std::string(this->Contacts[i].get_last_name(), 0, 9) << ".|";
 	else
-		std::cout << std::setw(10) << this->Contacts[i].get_last_name() << "|" << std::endl;
+		std::cout << std::setw(10) << this->Contacts[i].get_last_name() << "|";
 	if (this->Contacts[i].get_nickname().length() > 10)
-		std::cout << std::string(this->Contacts[i].get_nickname(), 0, 9) << ".|" << std::endl;
+		std::cout << std::string(this->Contacts[i].get_nickname(), 0, 9) << ".|";
 	else
-		std::cout << std::setw(10) << this->Contacts[i].get_nickname() << "|" << std::endl;
-	return (0);
+		std::cout << std::setw(10) << this->Contacts[i].get_nickname() << "|";
+	std::cout <<endl;
+return (0);
 }
