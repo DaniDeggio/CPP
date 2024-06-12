@@ -64,6 +64,6 @@ int	PhoneBook::print_info(int i){
 		std::cout << std::string(this->Contacts[i].get_nickname(), 0, 9) << ".|";
 	else
 		std::cout << std::setw(10) << this->Contacts[i].get_nickname() << "|";
-	std::cout <<endl;
+	std::cout << std::endl;
 return (0);
 }
