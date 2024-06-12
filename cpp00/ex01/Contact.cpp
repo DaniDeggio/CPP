@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 18:30:42 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/05 16:45:02 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/12 05:17:39 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,8 @@ std::string  Contact::get_nickname(){
 
 std::string  Contact::get_phone_number(){
     return  (this->phone_number);
+}
+
+std::string  Contact::get_darkest_secret(){
+    return  (this->darkest_secret);
 }
