@@ -49,6 +49,8 @@ void    PhoneBook::print_contact(int i){
 int	PhoneBook::print_info(int i){
 	//if (this->Contacts[i].get_frist_name().empty())
 		//return (1);
+	if (i > 0)
+			std::cout << "---------------------------------------------" << std::endl;
 	std::cout << "|" << std::setw(10) << i << "|" << std::endl;
 	if (this->Contacts[i].get_frist_name().length() > 10)
 		std::cout << "|" << std::string(this->Contacts[i].get_frist_name(), 0, 9) << ".|" << std::endl;
@@ -62,6 +64,5 @@ int	PhoneBook::print_info(int i){
 		std::cout << std::string(this->Contacts[i].get_nickname(), 0, 9) << ".|" << std::endl;
 	else
 		std::cout << std::setw(10) << this->Contacts[i].get_nickname() << "|" << std::endl;
-	std::cout << "---------------------------------------------" << std::endl;
 	return (0);
 }
