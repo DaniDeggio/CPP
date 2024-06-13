@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:13:40 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/12 05:43:50 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/13 14:43:37 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,16 @@ void	add(PhoneBook phonebook){
 
 	while (n < 5) {
 		question(n);
-	std::getline(std::cin, answare);
-	if (!check_answare(answare, n))
-	{
-		add_newcontact(phonebook, answare, n);
-		n++;
-	}
-	else
+		std::getline(std::cin, answare);
+		if (!check_answare(answare, n)) {
+			add_newcontact(phonebook, answare, n);
+			n++;
+		}
+		else
 			std::cout << "Invalid field" << std::endl;
 	}
 	std::cout << "Added successfully!" << std::endl;
+	phonebook.print_contact(0);
 }
 
 void	print_table(PhoneBook phonebook){
