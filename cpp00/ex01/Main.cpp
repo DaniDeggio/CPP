@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:13:40 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 02:24:32 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/17 03:49:11 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,21 @@ void	print_table(PhoneBook phonebook){
 }
 
 void	search(PhoneBook phonebook){
+	std::string index;
+	int flag = 0;
+	
 	print_table(phonebook);
+	while (!flag){
+		std::cout << std::endl << "Enter the index of the contact: " << std::endl;
+		std::getline(std::cin, index);
+		if (index.length() == 1 && isdigit(index[0]) && index[0] >= '0' && index[0] <= '7'
+			&& phonebook.check_contact(std::atoi(index.c_str()))){
+			phonebook.print_contact(std::atoi(index.c_str()));
+			flag = 1;
+		}
+		else
+			std::cout << "Invalid index" << std::endl;
+	}
 	return ;
 }
 

@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 17:26:36 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 02:12:10 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/17 03:42:46 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ public:
 		std::string nickname, std::string phone_number, std::string secret);
 	void	print_contact(int i);
 	int		print_info(int i);
+	int	check_contact(int i);
 };
 
 #endif

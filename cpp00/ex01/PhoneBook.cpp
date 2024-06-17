@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:29:03 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 02:22:10 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/17 03:41:46 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void    PhoneBook::print_contact(int i){
 }
 
 int	PhoneBook::print_info(int i){
-	if (this->Contacts[i].get_frist_name().empty())
+	if (this->check_contact(i) == 0)
 		return (1);
 	std::cout << "|" << std::setw(10) << i << "|";
 	if (this->Contacts[i].get_frist_name().length() > 10)
@@ -64,4 +64,10 @@ int	PhoneBook::print_info(int i){
 		std::cout << std::setw(10) << this->Contacts[i].get_nickname() << "|" << std::endl;
 	std::cout << "---------------------------------------------" << std::endl;
 	return (0);
+}
+
+int	PhoneBook::check_contact(int i){
+	if (this->Contacts[i].get_frist_name().empty())
+		return (0);
+	return (1);
 }

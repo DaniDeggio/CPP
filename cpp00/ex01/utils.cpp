@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 05:21:30 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 02:17:35 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/17 03:54:45 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,12 @@ int check_answare(std::string answare, int n){
             answare.erase(answare.find_last_not_of(" \t\v\r\f") + 1, answare[answare.length() - 1]);
 	if (answare.empty())
 		return (1);
-	if (n == 3)
-		return (0); 	//controllare numeri
+	if (n == 3){
+		if (atoi(answare.c_str()) == 0)
+			return (1);
+		else
+			return (0);
+	}
 	return (0);
 }
 
