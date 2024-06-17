@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 05:21:30 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/13 14:42:01 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/17 02:17:35 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int check_answare(std::string answare, int n){
 	return (0);
 }
 
-void	add_newcontact(PhoneBook phonebook, std::string answare, int n){
+void	add_newcontact(PhoneBook &phonebook, std::string answare, int n){
 	static	std::string frist_name;
 	static	std::string last_name;
     static	std::string nickname;
@@ -55,6 +55,5 @@ void	add_newcontact(PhoneBook phonebook, std::string answare, int n){
 	{
 		secret = answare;
 		phonebook.add_contact(frist_name, last_name, nickname, phone_number, secret);
-		phonebook.print_info(0);
 	}
 }

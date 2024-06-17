@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 18:01:16 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/12 05:38:40 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/17 02:15:32 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@
 
 void    question(int n);
 int     check_answare(std::string answare, int n);
-void	add_newcontact(PhoneBook phonebook, std::string answare, int n);
+void	add_newcontact(PhoneBook &phonebook, std::string answare, int n);
 
 #endif

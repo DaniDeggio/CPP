@@ -3,31 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   Main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:13:40 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/13 14:43:37 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/17 02:24:32 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Phone.hpp"
 
-void	add(PhoneBook phonebook){
+void	add(PhoneBook &phonebook){
 	int n = 0;
 	std::string answare;
 
 	while (n < 5) {
 		question(n);
 		std::getline(std::cin, answare);
-		if (!check_answare(answare, n)) {
+		if (!check_answare(answare, n))
+		{
 			add_newcontact(phonebook, answare, n);
 			n++;
 		}
 		else
-			std::cout << "Invalid field" << std::endl;
+				std::cout << "Invalid field" << std::endl;
 	}
 	std::cout << "Added successfully!" << std::endl;
-	phonebook.print_contact(0);
 }
 
 void	print_table(PhoneBook phonebook){
@@ -38,7 +38,6 @@ void	print_table(PhoneBook phonebook){
 		if (phonebook.print_info(i))
 			break ;
 	}
-	std::cout << "---------------------------------------------" << std::endl;
 }
 
 void	search(PhoneBook phonebook){
