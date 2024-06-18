@@ -12,7 +12,7 @@
 
 #include    "HumanA.hpp"
 
-HumanA::HumanA(std::string	name, Weapon gun) {
+HumanA::HumanA(std::string	name, Weapon &gun) {
 	this->name = name;
 	this->gun = gun;
 }
