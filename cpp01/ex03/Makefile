@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/06/18 22:29:43 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/06/18 21:02:59 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Brain
+NAME	= Unnecessary_violence
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
