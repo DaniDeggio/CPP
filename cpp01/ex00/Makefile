@@ -6,11 +6,11 @@
 #    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/06/12 05:21:49 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/06/18 15:07:57 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= PhoneBook
+NAME	= Zombie
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -26,10 +26,10 @@ YELLOW := \033[1;33m
 BLUE := \033[1;34m
 CYAN := \033[1;36m
 
-SRC := Main.cpp \
-		PhoneBook.cpp \
-		Contact.cpp \
-		utils.cpp
+SRC :=	main.cpp \
+		Zombie.cpp \
+		newZombie.cpp \
+		randomChump.cpp
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 

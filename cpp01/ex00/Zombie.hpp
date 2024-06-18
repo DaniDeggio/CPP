@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 02:32:42 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/18 03:11:05 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/18 15:11:19 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@
 #include <string>
 
 class Zombie {
-    private:
-        std::string name;
+	private:
+		std::string name;
 
-    public:
-        Zombie(std::string name);
-        ~Zombie(void);
-        void    announce(void);
+	public:
+		Zombie(std::string name);
+		~Zombie(void);
+		void    announce(void);
 };
 
 Zombie  *newZombie(std::string name);

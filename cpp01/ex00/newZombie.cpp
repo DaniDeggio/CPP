@@ -6,12 +6,12 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 02:53:33 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/18 03:01:56 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/18 15:11:26 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 Zombie *newZombie(std::string name) {
-    return (new Zombie(name));
+	return (new Zombie(name));
 }
