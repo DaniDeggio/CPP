@@ -17,11 +17,13 @@ int main(int ac, char **av){
 		std::cout << "Invalid parameters" << std::endl;
 		return (1);
 	}
-	std::string File = av[1];
-	std::string s1 = av[2];
-	std::string s2 = av[3];
+	std::string File(av[1]);
+	std::string s1(av[2]);
+	std::string s2(av[3]);
 
-	
+	std::ifstream Input(File);
+	if (!Input.is_open()){
+		std::cout << "Error while opening the file: " << File << std::endl;
 	
 			
 }
