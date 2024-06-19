@@ -6,13 +6,13 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 21:06:38 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/18 21:21:22 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/06/19 13:20:07 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include    "HumanA.hpp"
 
-HumanA::HumanA(std::string name, Weapon& gun) : name(name), gun(gun) {
+HumanA::HumanA(std::string name, Weapon &gun) : name(name), gun(gun) {
 }
 
 
