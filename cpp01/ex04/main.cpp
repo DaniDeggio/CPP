@@ -24,6 +24,6 @@ int main(int ac, char **av){
 	std::ifstream Input(File);
 	if (!Input.is_open()){
 		std::cout << "Error while opening the file: " << File << std::endl;
-	
+		}
 			
 }
