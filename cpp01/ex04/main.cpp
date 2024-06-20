@@ -39,7 +39,7 @@ int main(int ac, char **av){
 	File2.append(".replace");
 
 	std::ifstream Input(File);
-	sts::ofsteeam Output(File2);
+	std::ofstream Output(File2);
 
 	if (!Input.is_open() || !Output.is_open()){
 		std::cout << "Error while opening the file: " << File << std::endl;
@@ -49,5 +49,5 @@ int main(int ac, char **av){
 		Output << replacer(line, s1, s2) << std::endl;
 	}
 	Output.close();
-	input.close();
+	nput.close();
 }

@@ -13,6 +13,7 @@
 #ifndef REPLACER_H
 # define REPLACER_H
 
+#include <fstream>
 #include <iostream>
 #include <string>
 
