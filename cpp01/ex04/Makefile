@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Unnecessary_violence
+NAME	= replace
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -27,9 +27,6 @@ BLUE := \033[1;34m
 CYAN := \033[1;36m
 
 SRC :=	main.cpp \
-		Weapon.cpp \
-		HumanA.cpp \
-		HumanB.cpp \
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 
