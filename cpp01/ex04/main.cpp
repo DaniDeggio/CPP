@@ -39,15 +39,18 @@ int main(int ac, char **av){
 	File2.append(".replace");
 
 	std::ifstream Input(File);
-	std::ofstream Output(File2);
-
-	if (!Input.is_open() || !Output.is_open()){
+	if (!Input.is_open()){
 		std::cout << "Error while opening the file: " << File << std::endl;
 		return (1);
-		}
+	}
+	std::ofstream Output(File2);
+	if (!Output.is_open()){
+		std::cout << "Error while creating the file: " << File << std::endl;
+		return (1);
+	}
 	while (std::getline(Input, line)){
 		Output << replacer(line, s1, s2) << std::endl;
 	}
 	Output.close();
-	nput.close();
+	Input.close();
 }
