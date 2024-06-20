@@ -12,6 +12,18 @@
 
 #include "replacer.hpp"
 
+std::string replacer(std::string line, std::string s1, std::string s2){
+	std::string new_line;
+	size_t pos = 0;
+	size_t old_pos = 0;
+	if (line.find(s1) == std::string::npos)
+		return (line);
+	while (pos = line.find(s1, pos) != std::string::npos) {
+	new_line.append(line, pos)
+}
+	return (new_line);
+}
+
 int main(int ac, char **av){
 	if (ac != 4) {
 		std::cout << "Invalid parameters" << std::endl;
@@ -27,12 +39,13 @@ int main(int ac, char **av){
 	std::ifstream Input(File);
 	sts::ofsteeam Output(File2);
 
-	if (!Input.is_open()){
+	if (!Input.is_open() || !Output.is_open()){
 		std::cout << "Error while opening the file: " << File << std::endl;
 		return (1);
 		}
 	while (std::getline(Input, line)){
-		replacer(line, s1, s2);
+		Output << replacer(line, s1, s2) << std::endl;
 	}
+	Output.close();
 	input.close();
 }
