@@ -16,11 +16,14 @@ std::string replacer(std::string line, std::string s1, std::string s2){
 	std::string new_line;
 	size_t pos = 0;
 	size_t old_pos = 0;
-	if (line.find(s1) == std::string::npos)
-		return (line);
+
 	while (pos = line.find(s1, pos) != std::string::npos) {
-	new_line.append(line, pos)
+	new_line.append(line, old_pos, pos - old_pos);
+	new_line.append(s2);
+	old_pos = pos + s2.len
+	pos += s1.len
 }
+	new_line.append(line, old_pos, line.size() - old_pos);
 	return (new_line);
 }
 
