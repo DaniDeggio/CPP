@@ -14,5 +14,6 @@
 # define REPLACER_H
 
 #include <iostream>
+#include <string>
 
 #endif
