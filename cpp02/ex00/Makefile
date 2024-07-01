@@ -6,11 +6,11 @@
 #    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/07/01 14:37:35 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/07/01 15:01:19 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Unnecessary_violence
+NAME	= Fixed
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -27,9 +27,7 @@ BLUE := \033[1;34m
 CYAN := \033[1;36m
 
 SRC :=	main.cpp \
-		Weapon.cpp \
-		HumanA.cpp \
-		HumanB.cpp \
+		Fixed.cpp \
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 

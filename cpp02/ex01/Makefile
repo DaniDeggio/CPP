@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/07/01 14:37:35 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/06/18 15:07:57 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Unnecessary_violence
+NAME	= Zombie
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -27,9 +27,9 @@ BLUE := \033[1;34m
 CYAN := \033[1;36m
 
 SRC :=	main.cpp \
-		Weapon.cpp \
-		HumanA.cpp \
-		HumanB.cpp \
+		Zombie.cpp \
+		newZombie.cpp \
+		randomChump.cpp
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 

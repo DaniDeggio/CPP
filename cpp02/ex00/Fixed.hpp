@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   replacer.hpp                                       :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/19 13:43:12 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/07/01 14:55:06 by dde-giov         ###   ########.fr       */
+/*   Created: 2024/07/01 14:53:46 by dde-giov          #+#    #+#             */
+/*   Updated: 2024/07/01 15:01:07 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef REPLACER_HPP
-# define REPLACER_HPP
+#ifndef FIXED_HPP
+# define FIXED_HPP
 
-#include <fstream>
-#include <iostream>
-#include <string>
+class Fixed {
+	private:
+		int	fx_value;
+		static const int	fract;
+	public:
+		Fixed(void);
+		Fixed(Fixed fx);
+
+}
 
 #endif
