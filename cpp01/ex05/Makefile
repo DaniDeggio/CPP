@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/06/18 21:02:59 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/07/01 14:37:41 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= replace
+NAME	= Harl
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -27,6 +27,7 @@ BLUE := \033[1;34m
 CYAN := \033[1;36m
 
 SRC :=	main.cpp \
+		Harl.cpp \
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 
