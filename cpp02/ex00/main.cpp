@@ -3,29 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:18:01 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/07/01 14:37:08 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/07/04 16:29:41 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#include "Fixed.hpp"
 
-int main(int ac, char **av){
-	Harl test;
-	
-	if (ac == 1){
-		test.complain("DEBUG");
-		std::cout << std::endl;
-		test.complain("INFO");
-		std::cout << std::endl;
-		test.complain("WARNING");
-		std::cout << std::endl;
-		test.complain("ERROR");
-		std::cout << std::endl;
-	}
-	else {
-		test.complain(av[1]);
-	}
+int main( void ) {
+	Fixed a;
+	Fixed b( a );
+	Fixed c;
+
+	c = b;
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
+return 0;
 }
