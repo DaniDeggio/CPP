@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/06/18 15:07:57 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/07/01 15:01:19 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Zombie
+NAME	= Fixed
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -27,9 +27,7 @@ BLUE := \033[1;34m
 CYAN := \033[1;36m
 
 SRC :=	main.cpp \
-		Zombie.cpp \
-		newZombie.cpp \
-		randomChump.cpp
+		Fixed.cpp \
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 
