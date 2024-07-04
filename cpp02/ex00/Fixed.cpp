@@ -6,15 +6,14 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 16:26:22 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/07/04 16:32:31 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/07/04 16:46:00 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed(void) {
+Fixed::Fixed(void): fx_value(0) {
     std::cout << "Default constructor called" << std::endl;
-    this->fx_value = 0;
 }
 
 Fixed::Fixed(const Fixed &fx) {
