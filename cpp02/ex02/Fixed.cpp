@@ -101,6 +101,27 @@ Fixed &Fixed::operator+(const Fixed &fx){
 		return Fixed(this->to_float() /(fx->to_float());
 }
 
+Fixed &Fixed::operator++(){
+	this->fx_value++;
+return this;
+}
+
+Fixed &Fixed::operator--(){
+	this->fx_value--;
+return this;
+}
+
+Fixed Fixed::operator++(int){
+	Fixed temp = this
+	this->fx_value++;
+
+
+return Fixed Fixed::operator--(int){
+	Fixed temp = this
+	this->fx_value--;
+return this;
+}
+
 std::ostream & operator<<(std::ostream &out, const Fixed &fx) {
 	out << fx.toFloat();
 	return out;
