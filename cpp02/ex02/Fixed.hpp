@@ -34,8 +34,16 @@ class Fixed {
 		float toFloat( void ) const;
 		int toInt( void ) const;
 		
+	// comparison operator
+	bool operator>(const Fixed &fx);
+	bool operator<(const Fixed &fx);
+	bool operator>=(const Fixed &fx);
+	bool operator<=(const Fixed &fx);
+	bool operator==(const Fixed &fx);
+	bool operator!=(const Fixed &fx);
 
 };
+// insertion operator
 std::ostream & operator<<(std::ostream &out, const Fixed &fx);
 
 #endif
