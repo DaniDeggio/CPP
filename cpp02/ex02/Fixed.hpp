@@ -42,6 +42,12 @@ class Fixed {
 	bool operator==(const Fixed &fx);
 	bool operator!=(const Fixed &fx);
 
+// arithmetic operators
+	Fixed &operator+(const Fixed &fx);
+	Fixed &operator-(const Fixed &fx);
+	Fixed &operator*(const Fixed &fx);
+	Fixed &operator/(const Fixed &fx);
+
 };
 // insertion operator
 std::ostream & operator<<(std::ostream &out, const Fixed &fx);
