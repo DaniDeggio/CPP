@@ -48,6 +48,14 @@ class Fixed {
 	Fixed &operator*(const Fixed &fx);
 	Fixed &operator/(const Fixed &fx);
 
+// increment/decrement 
+
+	Fixed &operator++();
+	Fixed operator++(int);
+	Fixed &operator--();
+	Fixed operator--(int);
+
+
 };
 // insertion operator
 std::ostream & operator<<(std::ostream &out, const Fixed &fx);
