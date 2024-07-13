@@ -82,6 +82,25 @@ bool Fixed::operator!=(const Fixed fx){
 	return (this->fx_value != fx->fx_value);
 }
 
+Fixed &Fixed::operator+(const Fixed &fx){
+	return Fixed(this->to_float() + fx->to_float());
+}
+
+	Fixed &Fixed::operator-(const Fixed &fx){
+	return Fixed(this->to_float() - fx->to_float());
+}
+
+	Fixed &Fixed::operator*(const Fixed &fx){
+	return Fixed(this->to_float() * fx->to_float());
+}
+
+	Fixed &Fixed::operator/(const Fixed &fx){
+	if (fx->to_float() == 0)
+	//error
+	else
+		return Fixed(this->to_float() /(fx->to_float());
+}
+
 std::ostream & operator<<(std::ostream &out, const Fixed &fx) {
 	out << fx.toFloat();
 	return out;
