@@ -58,6 +58,30 @@ int	Fixed::toInt( void ) const {
 	return this->fx_value >> this->fract;
 }
 
+bool Fixed::operator>(const Fixed fx){
+	return (this->fx_value > fx->fx_value);
+}
+
+bool Fixed::operator<(const Fixed fx){
+	return (this->fx_value < fx->fx_value);
+}
+
+bool Fixed::operator>=(const Fixed fx){
+	return (this->fx_value >= fx->fx_value);
+}
+
+bool Fixed::operator<=(const Fixed fx){
+	return (this->fx_value <= fx->fx_value);
+}
+
+bool Fixed::operator==(const Fixed fx){
+	return (this->fx_value == fx->fx_value);
+}
+
+bool Fixed::operator!=(const Fixed fx){
+	return (this->fx_value != fx->fx_value);
+}
+
 std::ostream & operator<<(std::ostream &out, const Fixed &fx) {
 	out << fx.toFloat();
 	return out;
