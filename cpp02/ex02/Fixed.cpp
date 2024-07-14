@@ -65,7 +65,7 @@ static Fixed Fixed::min(Fixed &n1, Fixed &n2){
 		return n1;
 }
 
-static Fixed Fixed::min(const Fixed &n1, const Fixed &n2){
+static const Fixed Fixed::min(const Fixed &n1, const Fixed &n2){
 	if (n1 > n2)
 		return n2;
 	else
@@ -79,7 +79,7 @@ static Fixed Fixed::max(Fixed &n1, Fixed &n2){
 		return n2;
 }
 
-static Fixed Fixed::max(const Fixed &n1, const Fixed &n2){
+static const Fixed Fixed::max(const Fixed &n1, const Fixed &n2){
 	if (n1 > n2)
 		return n1;
 	else
