@@ -58,6 +58,35 @@ int	Fixed::toInt( void ) const {
 	return this->fx_value >> this->fract;
 }
 
+static Fixed Fixed::min(Fixed &n1, Fixed &n2){
+	if (n1 > n2)
+		return n2;
+	else
+		return n1;
+}
+
+static Fixed Fixed::min(const Fixed &n1, const Fixed &n2){
+	if (n1 > n2)
+		return n2;
+	else
+		return n1;
+}
+
+static Fixed Fixed::max(Fixed &n1, Fixed &n2){
+	if (n1 > n2)
+		return n1;
+	else
+		return n2;
+}
+
+static Fixed Fixed::max(const Fixed &n1, const Fixed &n2){
+	if (n1 > n2)
+		return n1;
+	else
+		return n2;
+}
+
+
 bool Fixed::operator>(const Fixed fx){
 	return (this->fx_value > fx->fx_value);
 }
