@@ -33,7 +33,11 @@ class Fixed {
 		void setRawBits( int const raw );
 		float toFloat( void ) const;
 		int toInt( void ) const;
-		
+		static Fixed min(Fixed &n1, Fixed &n2);
+		static Fixed min(const Fixed &n1, const Fixed &n2);
+		static Fixed max(Fixed &n1, Fixed &n2);
+		static Fixed max(const Fixed &n1, const Fixed &n2);
+
 	// comparison operator
 	bool operator>(const Fixed &fx);
 	bool operator<(const Fixed &fx);
