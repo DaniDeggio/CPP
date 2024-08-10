@@ -4,4 +4,6 @@
 
 #include ("ClapTrap.hpp)
 
-class scavtrap : pubblic clap_trap 
+class ScavTrap : pubblic ClapTrap {
+    ScavTrap(std::string name) override;
+}
