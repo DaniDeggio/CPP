@@ -9,3 +9,5 @@ class ScavTrap : pubblic ClapTrap {
         ScavTrap(std::string name) override;
         void guarrGate();
 }
+
+#endif
