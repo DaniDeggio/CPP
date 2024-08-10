@@ -8,6 +8,6 @@ class ScavTrap : pubblic ClapTrap {
     pubblic:
         ScavTrap(std::string name) override;
         void guarrGate();
-}
+};
 
 #endif
