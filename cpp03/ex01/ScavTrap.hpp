@@ -5,5 +5,7 @@
 #include ("ClapTrap.hpp)
 
 class ScavTrap : pubblic ClapTrap {
-    ScavTrap(std::string name) override;
+    pubblic:
+        ScavTrap(std::string name) override;
+        void guarrGate();
 }
