@@ -24,8 +24,8 @@ private:
 	int energyPoints;
 	int attackDamage;
 public:
-	ClapTrap(std::string name);
-	~ClapTrap();
+	vitrual ClapTrap(std::string name);
+	virtual ~ClapTrap();
 
 	void attack(const std::string &target);
 	void takeDamage(unsigned int amount);
