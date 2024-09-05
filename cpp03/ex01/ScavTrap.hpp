@@ -6,7 +6,8 @@
 
 class ScavTrap : pubblic ClapTrap {
     pubblic:
-        ScavTrap(std::string name) override;
+        ScavTrap(std::string name);
+        ~ScavTrap() override;
         void guarrGate();
 };
 
