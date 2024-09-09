@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:10:36 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/09 22:06:50 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/09 20:24:33 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ ScavTrap::~ScavTrap() {
 	std::cout << "ScavTrap destructor called" << std::endl;
 } 
 
-void ScavTrap::guardGate() {
+void ScavTrap::guarrGate() {
     std::cout << "ScavTrap " << this->name << " has entered in Gate keeper mode!" << std::endl;
 }
 
