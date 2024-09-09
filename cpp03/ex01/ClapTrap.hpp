@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 12:51:22 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/07/19 14:12:41 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/07 20:18:29 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ private:
 	int energyPoints;
 	int attackDamage;
 public:
-	vitrual ClapTrap(std::string name);
-	virtual ~ClapTrap();
+	ClapTrap(std::string name);
+	~ClapTrap();
 
-	void attack(const std::string &target);
+	virtual void attack(const std::string &target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 };
