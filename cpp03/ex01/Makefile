@@ -6,7 +6,7 @@
 #    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/07/19 13:06:56 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/09/09 20:15:49 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ CYAN := \033[1;36m
 
 SRC :=	main.cpp \
 		ClapTrap.cpp \
+		ScavTrap.cpp \
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 
