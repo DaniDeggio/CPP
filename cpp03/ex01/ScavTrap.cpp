@@ -6,19 +6,22 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:10:36 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/09 20:15:12 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/09 20:24:33 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap(std::string name) : ClapTrap::ClapTrap(name), hitPoints(10), energyPoints(10), attackDamage(0) {
+ScavTrap::ScavTrap(std::string name) : ClapTrap::ClapTrap(name){
+        this->hitPoints = 100;
+        this->energyPoints = 50;
+        this->attackDamage = 20;
 	std::cout << "ScavTrap constructor called" << std::endl;
 }
 
 ScavTrap::~ScavTrap() {
 	std::cout << "ScavTrap destructor called" << std::endl;
-}
+} 
 
 void ScavTrap::guarrGate() {
     std::cout << "ScavTrap " << this->name << " has entered in Gate keeper mode!" << std::endl;

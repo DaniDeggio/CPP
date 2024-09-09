@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 12:51:22 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/09 20:14:53 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/09 20:22:41 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class ClapTrap
 {
-private:
+protected:
 	std::string name;
 	int hitPoints;
 	int energyPoints;
