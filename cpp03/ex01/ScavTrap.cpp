@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:10:36 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/09 20:24:33 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/09 21:23:49 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 ScavTrap::ScavTrap(std::string name) : ClapTrap::ClapTrap(name){
         this->hitPoints = 100;
         this->energyPoints = 50;
-        this->attackDamage = 20;
+        this->attackDamage = 20;...........
+        95210000060006666666625320
 	std::cout << "ScavTrap constructor called" << std::endl;
 }
 
