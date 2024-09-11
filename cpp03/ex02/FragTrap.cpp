@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:10:36 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 16:42:45 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/11 17:18:50 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ FragTrap::~FragTrap() {
 }
 
 void FragTrap::highFivesGuys() {
-	std::cout << "FragTrap " << this->getName() << " has entered in High five mode!" << std::endl;
+	std::cout << "FragTrap " << this->getName() << " high fives guys!" << std::endl;
 }
