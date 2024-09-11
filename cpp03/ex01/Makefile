@@ -6,11 +6,11 @@
 #    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/09/09 20:15:49 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/09/11 16:44:34 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= ClapTrap
+NAME	= ScavTrap
 
 CC := g++
 FLAGS := -Wall -Wextra -Werror -std=c++98

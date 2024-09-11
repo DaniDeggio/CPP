@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 12:57:16 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 16:20:06 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/11 16:40:10 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &src) {
 }
 
 void ClapTrap::attack(const std::string &target) {
-	if (this->hitPoints == 0) {
+	if (this->hitPoints <= 0) {
 		std::cout << "ClapTrap " << this->name << " is dead and cannot attack!" << std::endl;
 		return;
 	}
-	else if (this->energyPoints == 0) {
+	else if (this->energyPoints <= 0) {
 		std::cout << "ClapTrap " << this->name << " has no energy and cannot attack!" << std::endl;
 		return;
 	}
@@ -58,11 +58,11 @@ void ClapTrap::takeDamage(unsigned int amount) {
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
-	if (this->hitPoints == 0) {
+	if (this->hitPoints <= 0) {
 		std::cout << "ClapTrap " << this->name << " is dead and cannot be repaired!" << std::endl;
 		return;
 	}
-	else if (this->energyPoints == 0) {
+	else if (this->energyPoints <= 0) {
 		std::cout << "ClapTrap " << this->name << " has no energy and cannot be repaired!" << std::endl;
 		return;
 	}
