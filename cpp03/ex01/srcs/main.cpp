@@ -6,12 +6,12 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:18:01 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 17:10:35 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/11 19:49:00 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
+#include "../class/ClapTrap.hpp"
+#include "../class/ScavTrap.hpp"
 
 int main() {
 	ClapTrap claptrap("TestClap");

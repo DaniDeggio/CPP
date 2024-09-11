@@ -6,7 +6,7 @@
 #    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/09/11 16:44:39 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/09/11 19:50:58 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,10 @@ YELLOW := \033[1;33m
 BLUE := \033[1;34m
 CYAN := \033[1;36m
 
-SRC :=	main.cpp \
-		ClapTrap.cpp \
-		ScavTrap.cpp \
-		FragTrap.cpp \
+SRC :=	srcs/main.cpp \
+		class/ClapTrap.cpp \
+		class/ScavTrap.cpp \
+		class/FragTrap.cpp \
 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 
