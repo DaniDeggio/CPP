@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 19:54:02 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 20:12:53 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/11 20:27:59 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,9 @@ int main()
 	i->makeSound(); //will output the cat sound!
 	j->makeSound();
 	meta->makeSound();
+
+	delete meta;
+	delete j;
+	delete i;
 	return 0;
 }
