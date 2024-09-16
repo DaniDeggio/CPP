@@ -6,7 +6,7 @@
 #    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/09/11 20:13:38 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/09/16 14:52:30 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,9 @@ CYAN := \033[1;36m
 SRC :=	srcs/main.cpp \
 		class/Animal.cpp \
 		class/Dog.cpp \
-		class/Cat.cpp
+		class/Cat.cpp \
+		class/WrongAnimal.cpp \
+		class/WrongCat.cpp 
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 
 all: $(NAME)

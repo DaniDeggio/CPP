@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Animals.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 20:01:32 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 14:53:22 by dde-giov         ###   ########.fr       */
+/*   Created: 2024/09/16 14:29:16 by dde-giov          #+#    #+#             */
+/*   Updated: 2024/09/16 14:44:42 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef ANIMALS_HPP
+# define ANIMALS_HPP
 
 #include <iostream>
 #include <string>
 
-class Animal {
-    protected:
-        std::string type;
-    public:
-        Animal();
-        Animal(std::string type);
-        virtual ~Animal();
-        Animal(const Animal &src);
-        Animal &operator=(const Animal &src);
-        
-        virtual void makeSound() const;
-        
-        std::string getType() const;
-};
+#include "../class/Animal.hpp"
+#include "../class/Cat.hpp"
+#include "../class/Dog.hpp"
+
+#include "../class/WrongAnimal.hpp"
+#include "../class/WrongCat.hpp"
 
 #endif
