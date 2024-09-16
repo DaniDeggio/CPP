@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 19:54:02 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 15:18:09 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/16 15:30:57 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,20 @@ int main()
 	std::cout << std::endl;
 	for (int i = 0; i < 100; i++)
 		delete animals[i];
+
+	std::cout << std::endl;
+	
+	// Test for Deep Copy
+	Dog originalDog;
+    originalDog.getBrain()->setIdea(0, "Chase the cat");
+
+    Dog copiedDog(originalDog);
+    std::cout << "Original Dog Idea: " << originalDog.getBrain()->getIdea(0) << std::endl;
+    std::cout << "Copied Dog Idea: " << copiedDog.getBrain()->getIdea(0) << std::endl;
+
+    copiedDog.getBrain()->setIdea(0, "Eat the bone");
+    std::cout << "Original Dog Idea after modification: " << originalDog.getBrain()->getIdea(0) << std::endl;
+    std::cout << "Copied Dog Idea after modification: " << copiedDog.getBrain()->getIdea(0) << std::endl;
+
 	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:01:29 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 15:21:02 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/16 16:12:46 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,22 @@ Dog::Dog() : Animal("Dog") {
     std::cout << "Dog constructor called" << std::endl;
 }
 
+Dog::Dog(const Dog &src) : Animal(src) {
+    brain = new Brain(*src.brain);
+    *this = src;
+    std::cout << "Dog copy constructor called" << std::endl;
+}
+
+Dog &Dog::operator=(const Dog &src) {
+    if (this != &src) {
+        Animal::operator=(src);
+        delete brain;
+        brain = new Brain(*src.brain);
+    }
+    std::cout << "Dog assignation operator called" << std::endl;
+    return *this;
+}
+
 Dog::~Dog() {
     delete brain;
     std::cout << "Dog destructor called" << std::endl;
@@ -25,4 +41,8 @@ Dog::~Dog() {
 
 void    Dog::makeSound() const {
     std::cout << "BAU Bau" << std::endl;
+}
+
+Brain *Dog::getBrain() const {
+    return brain;
 }

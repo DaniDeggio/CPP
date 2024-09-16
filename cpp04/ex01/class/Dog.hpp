@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:11:44 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 15:11:12 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/16 16:07:31 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,12 @@ class Dog : public Animal {
         Brain *brain;
     public:
         Dog();
+        Dog(const Dog &src);
+        Dog &operator=(const Dog &src);
         ~Dog() override;
         
         void makeSound() const override;
+        Brain *getBrain() const;
 };
 
 #endif

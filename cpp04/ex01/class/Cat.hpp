@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 19:58:27 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 15:10:51 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/16 16:07:22 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,12 @@ class Cat : public Animal {
         Brain *brain;
     public:
         Cat();
+        Cat(const Cat &src);
+        Cat &operator=(const Cat &src);
         ~Cat() override;
         
         void makeSound() const override;
+        Brain *getBrain() const;
 };
 
 #endif

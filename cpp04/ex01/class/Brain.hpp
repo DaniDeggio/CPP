@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:04:52 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 15:10:04 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/09/16 15:25:59 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Brain {
 
 		std::string getIdea(int i);
 		void setIdea(int i, std::string idea);
-	protected:
+	private:
 		std::string ideas[100];
 };
 
