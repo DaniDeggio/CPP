@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 02:32:42 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/18 15:11:19 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:52:25 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Zombie {
 	public:
 		Zombie(std::string name);
 		~Zombie(void);
+
 		void    announce(void);
 };
 

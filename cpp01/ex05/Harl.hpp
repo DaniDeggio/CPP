@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:18:24 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/07/01 14:55:19 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:12:10 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Harl{
         void info(void);
         void warning(void);
         void error(void);
+
     public:
         void complain(std::string level);
 };

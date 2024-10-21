@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/06/17 04:04:48 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/10/21 18:54:00 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ all: $(NAME)
 
 $(OBJSDIR)/%.o: %.cpp
 	mkdir -p $(@D)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	@echo "$(GREEN)Compilation $(CLR_RMV)of $(YELLOW)$(NAME) $(CLR_RMV)..."
