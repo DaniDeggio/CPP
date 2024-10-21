@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 20:50:20 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/19 13:08:27 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:00:37 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,11 @@ class HumanA{
 		std::string	name;
 		Weapon	 &gun;
         HumanA(void);
+
 	public:
         HumanA(std::string	name, Weapon &gun);
 		~HumanA();
+
 		void	attack();
 };
 

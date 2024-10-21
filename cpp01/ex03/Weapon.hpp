@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 20:39:43 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/18 20:52:11 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:58:45 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 class Weapon {
     private:
         std::string type;
+
     public:
         Weapon(std::string type);
         ~Weapon();

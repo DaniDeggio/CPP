@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 20:50:20 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/19 13:31:41 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:00:31 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@ class HumanB{
 	private:
 		std::string	name;
 		Weapon	*gun;
+
 	public:
 		HumanB(std::string	name);
 		~HumanB();
+
 		void	attack();
 		void    setWeapon(Weapon &gun);
 };
