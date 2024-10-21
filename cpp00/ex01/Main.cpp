@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:13:40 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 03:49:11 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/01 12:26:06 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	add(PhoneBook &phonebook){
 	int n = 0;
 	std::string answare;
 
+	std::cout << std::endl << std::endl;
 	while (n < 5) {
 		question(n);
 		std::getline(std::cin, answare);
@@ -31,6 +32,7 @@ void	add(PhoneBook &phonebook){
 }
 
 void	print_table(PhoneBook phonebook){
+	std::cout << std::endl << std::endl;
 	std::cout << "---------------------------------------------" << std::endl;
 	std::cout << "|     Index|First Name| Last Name|  Nickname|" << std::endl;
 	std::cout << "---------------------------------------------" << std::endl;
@@ -42,34 +44,30 @@ void	print_table(PhoneBook phonebook){
 
 void	search(PhoneBook phonebook){
 	std::string index;
-	int flag = 0;
 	
 	print_table(phonebook);
-	while (!flag){
-		std::cout << std::endl << "Enter the index of the contact: " << std::endl;
-		std::getline(std::cin, index);
-		if (index.length() == 1 && isdigit(index[0]) && index[0] >= '0' && index[0] <= '7'
-			&& phonebook.check_contact(std::atoi(index.c_str()))){
-			phonebook.print_contact(std::atoi(index.c_str()));
-			flag = 1;
-		}
-		else
-			std::cout << "Invalid index" << std::endl;
+	std::cout << std::endl << "Enter the index of the contact: " << std::endl;
+	std::getline(std::cin, index);
+	if (index.length() == 1 && isdigit(index[0]) && index[0] >= '0' && index[0] <= '7'
+		&& phonebook.check_contact(std::atoi(index.c_str()))){
+		phonebook.print_contact(std::atoi(index.c_str()));
 	}
+	else
+		std::cout << "Invalid index" << std::endl;
 	return ;
 }
 
 int main(){
 	PhoneBook   phonebook;
 	std::string command;
+	
 	while(42){
- 	std::cout << std::endl << "Type a command: ADD, SEARCH, EXIT" << std::endl;
+ 		std::cout << std::endl << "Type a command: ADD, SEARCH, EXIT" << std::endl;
 		std::getline(std::cin, command);
-		//command = command.substr(0, command.find(' '));
 		command.erase(0, command.find_first_not_of(" \t\v\f\r"));
 		while (isspace(command[command.length() - 1]))
             command.erase(command.find_last_not_of(" \t\v\r\f") + 1, command[command.length() - 1]);
-	if (command == "ADD")
+		if (command == "ADD")
 			add(phonebook);
 		else if (command == "SEARCH")
 			search(phonebook);

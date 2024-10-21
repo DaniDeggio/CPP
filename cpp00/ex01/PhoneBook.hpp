@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 17:26:36 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 03:42:46 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/01 11:59:31 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,13 @@ private:
 public:
 	PhoneBook();
 	~PhoneBook();
-    void   slide_contacts();
+	
+    void	slide_contacts();
 	void	add_contact(std::string frist_name, std::string last_name,
 		std::string nickname, std::string phone_number, std::string secret);
 	void	print_contact(int i);
 	int		print_info(int i);
-	int	check_contact(int i);
+	int		check_contact(int i);
 };
 
 #endif

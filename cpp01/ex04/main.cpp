@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 13:44:00 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/19 13:48:55 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/07 19:05:50 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ std::string replacer(std::string line, std::string s1, std::string s2){
 	size_t old_pos = 0;
 
 	while ((pos = line.find(s1, old_pos)) != std::string::npos) {
-	new_line.append(line, old_pos, pos - old_pos);
-	new_line.append(s2);
+		new_line.append(line, old_pos, pos - old_pos);
+		new_line.append(s2);
 	old_pos = pos + s1.length();
 }
 	new_line.append(line, old_pos, line.size() - old_pos);

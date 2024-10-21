@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 17:26:53 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 02:10:53 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/01 11:58:57 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,10 @@ private:
 public:
 	Contact();
 	~Contact();
-void	set_contact(std::string frist_name, std::string last_name,
+	
+	void	set_contact(std::string frist_name, std::string last_name,
 		std::string nickname, std::string phone_number, std::string secret);
+
 	std::string	get_frist_name();
 	std::string	get_last_name();
 	std::string	get_nickname();

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 05:21:30 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 03:54:45 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/01 12:14:37 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ int check_answare(std::string answare, int n){
 	if (n == 3){
 		if (atoi(answare.c_str()) == 0)
 			return (1);
-		else
-			return (0);
 	}
 	return (0);
 }

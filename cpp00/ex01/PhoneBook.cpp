@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:29:03 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 03:41:46 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/01 12:21:52 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,9 @@ int	PhoneBook::print_info(int i){
 		return (1);
 	std::cout << "|" << std::setw(10) << i << "|";
 	if (this->Contacts[i].get_frist_name().length() > 10)
-		std::cout << "|" << std::string(this->Contacts[i].get_frist_name(), 0, 9) << ".|";
+		std::cout << std::string(this->Contacts[i].get_frist_name(), 0, 9) << ".|";
 	else
-		std::cout << "|" << std::setw(10) << this->Contacts[i].get_frist_name() << "|";
+		std::cout << std::setw(10) << this->Contacts[i].get_frist_name() << "|";
 	if (this->Contacts[i].get_last_name().length() > 10)
 		std::cout << std::string(this->Contacts[i].get_last_name(), 0, 9) << ".|";
 	else

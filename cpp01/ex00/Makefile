@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/06/18 15:07:57 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/10/21 16:14:48 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= Zombie
 
-CC := g++
+CC := c++
 FLAGS := -Wall -Wextra -Werror -std=c++98
 RM := rm -f
 
