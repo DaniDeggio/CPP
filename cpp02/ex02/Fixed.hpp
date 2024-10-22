@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:53:46 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/07/04 19:53:38 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/23 01:02:22 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,18 @@ class Fixed {
 		static const Fixed max(const Fixed &n1, const Fixed &n2);
 
 	// comparison operator
-	bool operator>(const Fixed &fx);
-	bool operator<(const Fixed &fx);
-	bool operator>=(const Fixed &fx);
-	bool operator<=(const Fixed &fx);
-	bool operator==(const Fixed &fx);
-	bool operator!=(const Fixed &fx);
+	bool operator>(const Fixed &fx) const;
+	bool operator<(const Fixed &fx) const;
+	bool operator>=(const Fixed &fx) const;
+	bool operator<=(const Fixed &fx) const;
+	bool operator==(const Fixed &fx) const;
+	bool operator!=(const Fixed &fx) const;
 
 // arithmetic operators
-	Fixed &operator+(const Fixed &fx);
-	Fixed &operator-(const Fixed &fx);
-	Fixed &operator*(const Fixed &fx);
-	Fixed &operator/(const Fixed &fx);
+	Fixed operator+(const Fixed &fx);
+	Fixed operator-(const Fixed &fx);
+	Fixed operator*(const Fixed &fx);
+	Fixed operator/(const Fixed &fx);
 
 // increment/decrement 
 

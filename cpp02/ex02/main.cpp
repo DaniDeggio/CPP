@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:18:01 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/07/04 19:43:22 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/23 01:03:18 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int main( void ) {
     std::cout << a << std::endl;
     std::cout << b << std::endl;
     std::cout << Fixed::max( a, b ) << std::endl;
-    return 0;
+return 0;
 }
