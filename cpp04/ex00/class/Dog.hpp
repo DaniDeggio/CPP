@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:11:44 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 20:19:06 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/24 20:20:46 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ class Dog : public Animal {
     public:
         Dog();
         ~Dog() override;
+        Dog(const Dog &src);
+        Dog &operator=(const Dog &src);
         
         void makeSound() const override;
 };

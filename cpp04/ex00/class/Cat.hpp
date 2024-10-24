@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 19:58:27 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 20:19:53 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/24 20:20:24 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@
 class Cat : public Animal {
     public:
         Cat();
-        ~Cat() override;
+        Cat(const Cat &src);
+        ~Cat();
+        Cat &operator=(const Cat &src);
         
-        void makeSound() const override;
+        void makeSound() const;
 };
 
 #endif
