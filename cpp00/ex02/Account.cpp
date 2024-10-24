@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 04:01:25 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/06/17 04:13:19 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/24 17:27:18 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ void Account::displayStatus() const {
 
 // Private static member function
 void Account::_displayTimestamp() {
-    std::time_t now = std::time(nullptr);
+    std::time_t now = std::time(NULL);
     std::tm* tm_now = std::localtime(&now);
     std::cout << "[" << (tm_now->tm_year + 1900)
               << std::setfill('0') << std::setw(2) << (tm_now->tm_mon + 1)
