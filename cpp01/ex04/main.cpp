@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 13:44:00 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/10/07 19:05:50 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/24 17:46:30 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,19 +38,19 @@ int main(int ac, char **av){
 	std::string File2 = File;
 	File2.append(".replace");
 
-	std::ifstream Input(File);
-	if (!Input.is_open()){
+	std::ifstream In(File.c_str());
+	if (!In.is_open()){
 		std::cout << "Error while opening the file: " << File << std::endl;
 		return (1);
 	}
-	std::ofstream Output(File2);
-	if (!Output.is_open()){
+	std::ofstream Out(File2.c_str());
+	if (!Out.is_open()){
 		std::cout << "Error while creating the file: " << File << std::endl;
 		return (1);
 	}
-	while (std::getline(Input, line)){
-		Output << replacer(line, s1, s2) << std::endl;
+	while (std::getline(In, line)){
+		Out << replacer(line, s1, s2) << std::endl;
 	}
-	Output.close();
-	Input.close();
+	Out.close();
+	In.close();
 }
