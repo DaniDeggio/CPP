@@ -10,9 +10,13 @@
 class ScavTrap : public ClapTrap {
 	public:
 		ScavTrap(std::string name);
-		~ScavTrap() override;
+		ScavTrap();
+		ScavTrap(const ScavTrap &src);
+		~ScavTrap();
+		ScavTrap &operator=(const ScavTrap &src);
+
 		void guardGate();
-		void attack(const std::string &target) override;
+		void attack(const std::string &target);
 };
 
 #endif
