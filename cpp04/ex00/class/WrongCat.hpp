@@ -21,9 +21,9 @@
 class WrongCat : public WrongAnimal {
     public:
         WrongCat();
-        ~WrongCat() override;
+        ~WrongCat();
         
-        void makeSound() const override;
+        void makeSound() const;
 };
 
 #endif
