@@ -21,11 +21,11 @@
 class Dog : public Animal {
     public:
         Dog();
-        ~Dog() override;
+        ~Dog();
         Dog(const Dog &src);
         Dog &operator=(const Dog &src);
         
-        void makeSound() const override;
+        void makeSound() const;
 };
 
 #endif
