@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:01:16 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 20:19:16 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/30 15:27:07 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
 Animal::Animal() : type("Animal") {
-    std::cout << "Animal constructor called" << std::endl;
+    std::cout << "Animal default constructor called" << std::endl;
 }
 
 Animal::Animal(std::string type) : type(type) {

@@ -20,6 +20,17 @@ WrongCat::~WrongCat() {
     std::cout << "WrongCat destructor called" << std::endl;
 }
 
+WrongCat::WrongCat(const WrongCat &src){
+    *this = src;
+    std::cout << "WrongCat copy constructor called" << std::endl;
+}
+
+WrongCat &WrongCat::operator=(const WrongCat &src) {
+    if (this != &src)
+        this->type = src.type;
+    return *this;
+}
+
 void    WrongCat::makeSound() const {
     std::cout << "Miao Meow" << std::endl;
 }

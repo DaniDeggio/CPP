@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 19:58:27 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/10/24 20:20:24 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/10/30 15:29:18 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 class Cat : public Animal {
     public:
         Cat();
-        Cat(const Cat &src);
         ~Cat();
+        Cat(const Cat &src);
         Cat &operator=(const Cat &src);
         
         void makeSound() const;
