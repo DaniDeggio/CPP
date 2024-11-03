@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:01:29 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 16:12:46 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/11/03 22:47:58 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,8 @@ Dog::Dog() : Animal("Dog") {
     std::cout << "Dog constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog &src) : Animal(src) {
+Dog::Dog(const Dog &src) : Animal("Dog") {
     brain = new Brain(*src.brain);
-    *this = src;
     std::cout << "Dog copy constructor called" << std::endl;
 }
 

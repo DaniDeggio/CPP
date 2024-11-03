@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:01:16 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/11 20:19:16 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/11/03 22:45:16 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,13 @@ Animal::~Animal() {
 
 Animal::Animal(const Animal &src) {
     *this = src;
+    std::cout << "Animal copy constructor called" << std::endl;
 }
 
 Animal &Animal::operator=(const Animal &src) {
     if (this != &src)
         this->type = src.type;
+    std::cout << "Animal assignation operator called" << std::endl;
     return *this;
 }
 

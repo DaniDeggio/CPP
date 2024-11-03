@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:04:56 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 15:10:16 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/11/03 22:42:36 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ Brain::~Brain() {
 }
 
 Brain::Brain(const Brain &src) {
-    *this = src;
+	for (int i = 0; i < 100; i++)
+            this->ideas[i] = src.ideas[i];
+    std::cout << "Brain copy constructor called" << std::endl;
 }
 
 Brain &Brain::operator=(const Brain &src) {
@@ -29,6 +31,7 @@ Brain &Brain::operator=(const Brain &src) {
         for (int i = 0; i < 100; i++)
             this->ideas[i] = src.ideas[i];
     }
+    std::cout << "Brain assignation operator called" << std::endl;
     return *this;
 }
 

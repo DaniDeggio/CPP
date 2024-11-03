@@ -20,11 +20,12 @@ class WrongAnimal {
     protected:
         std::string type;
     public:
-        WrongAnimal();
-        WrongAnimal(std::string type);
-        ~WrongAnimal();
-        WrongAnimal(const WrongAnimal &src);
-        WrongAnimal &operator=(const WrongAnimal &src);
+        WrongAnimal(std::string type); // Type constructor
+    
+        WrongAnimal(); // Default constructor
+        ~WrongAnimal(); // Destructor
+        WrongAnimal(const WrongAnimal &src); // Copy constructor
+        WrongAnimal &operator=(const WrongAnimal &src); // Copy assignment operator
         
         void makeSound() const;
         

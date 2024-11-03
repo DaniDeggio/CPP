@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:01:23 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/09/16 16:12:33 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/11/03 22:47:49 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ Cat::Cat() : Animal("Cat") {
     std::cout << "Cat constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat &src) : Animal(src) {
+Cat::Cat(const Cat &src) : Animal("Cat") {
     brain = new Brain(*src.brain);
-    *this = src;
     std::cout << "Cat copy constructor called" << std::endl;
 }
 
