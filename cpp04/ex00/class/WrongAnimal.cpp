@@ -17,7 +17,7 @@ WrongAnimal::WrongAnimal() : type("WrongAnimal") {
 }
 
 WrongAnimal::WrongAnimal(std::string type) : type(type) {
-	std::cout << "WrongAnimal constructor called" << std::endl;
+	std::cout << "WrongAnimal type constructor called" << std::endl;
 }
 
 WrongAnimal::~WrongAnimal() {
