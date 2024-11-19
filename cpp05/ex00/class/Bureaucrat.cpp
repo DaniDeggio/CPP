@@ -6,13 +6,19 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 19:07:12 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/11/19 20:13:28 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/11/19 20:17:34 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
 
-Bureaucrat::Bureaucrat(void) : name("default"), grade(150) {}
+Bureaucrat::Bureaucrat(void) : name("default"), grade(150) {
+	std::cout << "Bureaucrat default constructor called" << std::endl;
+}
+
+Bureaucrat::Bureaucrat(std::string name) : name(name), grade(150) {
+	std::cout << "Bureaucrat name constructor called" << std::endl;
+}
 
 Bureaucrat::Bureaucrat(int grade) : name("default") {
 	if (grade < 1)
@@ -20,6 +26,7 @@ Bureaucrat::Bureaucrat(int grade) : name("default") {
 	if (grade > 150)
 		throw Bureaucrat::GradeTooLowException();
 	this->grade = grade;
+	std::cout << "Bureaucrat grade constructor called" << std::endl;
 }
 
 Bureaucrat::Bureaucrat(std::string name, int grade) : name(name) {
@@ -28,16 +35,22 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : name(name) {
 	if (grade > 150)
 		throw Bureaucrat::GradeTooLowException();
 	this->grade = grade;
+	std::cout << "Bureaucrat constructor called" << std::endl;
 }
 
-Bureaucrat::~Bureaucrat(void) {}
+Bureaucrat::~Bureaucrat(void) {
+	std::cout << "Bureaucrat destructor called" << std::endl;
+}
 
-Bureaucrat::Bureaucrat(Bureaucrat const &src) : name(src.name), grade(src.grade) {}
+Bureaucrat::Bureaucrat(Bureaucrat const &src) : name(src.name), grade(src.grade) {
+	std::cout << "Bureaucrat copy constructor called" << std::endl;
+}
 
 Bureaucrat &Bureaucrat::operator=(Bureaucrat const &src) {
 	if (this != &src) {
 		this->grade = src.grade;
 	}
+	std::cout << "Bureaucrat assignation operator called" << std::endl;
 	return *this;
 }
 
