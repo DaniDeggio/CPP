@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 19:07:17 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/11/19 19:57:13 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/11/19 20:16:35 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,17 @@ class Bureaucrat {
 
 	public:
 		Bureaucrat(void);
-		Bureaucrat(std::string name, int grade);
+		Bureaucrat(std::string name);
 		Bureaucrat(int grade);
+		Bureaucrat(std::string name, int grade);
+
 		~Bureaucrat(void);
-		
+		Bureaucrat(Bureaucrat const &src);
+		Bureaucrat &operator=(Bureaucrat const &src);
+
 		std::string getName() const;
 		int getGrade() const;
-	
+
 		void incrementGrade();
 		void decrementGrade();
 		
