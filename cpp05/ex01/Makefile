@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-giov <dde-giov@student.42.fr>          +#+  +:+       +#+         #
+#    By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/20 17:37:53 by dde-giov          #+#    #+#              #
-#    Updated: 2024/10/21 18:54:00 by dde-giov         ###   ########.fr        #
+#    Updated: 2024/11/19 19:49:19 by dde-giov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Animals
+NAME	= Bureaucrat
 
 CC := c++
 FLAGS := -Wall -Wextra -Werror -std=c++98
@@ -27,11 +27,8 @@ BLUE := \033[1;34m
 CYAN := \033[1;36m
 
 SRC :=	srcs/main.cpp \
-		class/Animal.cpp \
-		class/Dog.cpp \
-		class/Cat.cpp \
-		class/WrongAnimal.cpp \
-		class/WrongCat.cpp 
+		class/Bureaucrat.cpp \
+
 OBJS := $(addprefix $(OBJSDIR)/, $(SRC:.cpp=.o))
 
 all: $(NAME)
