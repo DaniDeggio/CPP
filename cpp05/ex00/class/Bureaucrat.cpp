@@ -6,7 +6,7 @@
 /*   By: dde-giov <dde-giov@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 19:07:12 by dde-giov          #+#    #+#             */
-/*   Updated: 2024/11/19 19:57:33 by dde-giov         ###   ########.fr       */
+/*   Updated: 2024/11/19 20:13:28 by dde-giov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,15 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : name(name) {
 }
 
 Bureaucrat::~Bureaucrat(void) {}
+
+Bureaucrat::Bureaucrat(Bureaucrat const &src) : name(src.name), grade(src.grade) {}
+
+Bureaucrat &Bureaucrat::operator=(Bureaucrat const &src) {
+	if (this != &src) {
+		this->grade = src.grade;
+	}
+	return *this;
+}
 
 std::string Bureaucrat::getName() const{
 	return this->name;
